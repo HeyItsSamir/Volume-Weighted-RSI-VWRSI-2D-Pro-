@@ -1,18 +1,12 @@
-## 📊 Dynamic Bands Overview
+## 📊 VWRSI Pro — Dynamic Bands Module
 
-VWRSI 2D Pro includes shaded dynamic bands to highlight volume-weighted exhaustion zones:
+VWRSI Pro replaces static RSI thresholds with volatility-adaptive bands:
 
-- **Overbought Zone**: 70–100 (shaded red)
-- **Oversold Zone**: 0–30 (shaded green)
-- **Midline**: 50 (gray) — acts as a trend filter
-
+### 🔧 Formula
+```pine
+rsiMean = ta.sma(rsi, bandLength)
+rsiDev = ta.stdev(rsi, bandLength)
+dynHigh = rsiMean + bandMult * rsiDev
+dynLow  = rsiMean - bandMult * rsiDev
+```
 These bands are not static—they reflect volume-adjusted momentum extremes. When RSI enters these zones with strong volume, it signals potential reversal or exhaustion.
-
-
-### 🔍 Best Practices
-
-- Use the 50 midline to confirm trend bias:
-  - RSI > 50 → bullish setups
-  - RSI < 50 → bearish setups
-- Combine band crossovers with RSI MA for entry/exit signals
-- Watch for divergences near band edges for early reversal clues
