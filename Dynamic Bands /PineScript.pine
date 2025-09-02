@@ -80,9 +80,3 @@ h50 = hline(50, "Midline", color=color.new(#888888, 70))
 
 fill(h70, plot(100), color=color.new(colorDown, 90))
 fill(plot(0), h30,   color=color.new(colorUp, 90))
-
-
-// ----------------- Toggle -----------------
-signalsEnabled = input.bool(false, "Show Buy/Sell Signals", group="Signals")
-
-strictMode = input.bool(false, "Strict Mode (55/45 filter)", group="Signals")
