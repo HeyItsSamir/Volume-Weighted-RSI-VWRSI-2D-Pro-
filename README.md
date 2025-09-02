@@ -1,10 +1,10 @@
-# Volume-Weighted RSI [VWRSI 2D Pro]
+# Volume-Weighted RSI [VWRSI]
 
 A modular RSI indicator that adapts to market context by weighting momentum with volume. Built for traders who demand clarity, control, and precision.
 
 ---
 
-## 🔧 Features
+##  Features
 
 - **Volume-Weighted RSI**: Filters out low-volume noise for cleaner signals.
 - **Profile-Based Configuration**: Choose from Scalping, Intraday, Swing, Macro, or Custom.
@@ -14,7 +14,7 @@ A modular RSI indicator that adapts to market context by weighting momentum with
 
 ---
 
-## ⚙️ Configuration Profiles
+##  Configuration Profiles
 
 | Profile            | RSI Length | MA Length | Use Case            |
 |--------------------|------------|-----------|---------------------|
@@ -26,22 +26,8 @@ A modular RSI indicator that adapts to market context by weighting momentum with
 
 <img width="312" height="320" alt="Configurations" src="https://github.com/user-attachments/assets/1b810888-5c4a-40d2-a0cc-6f7182ba6e42" />
 
----
 
-## 📈 Signal Logic
-
-| Signal Type | Condition | Strict Mode Filter |
-|-------------|-----------|--------------------|
-| **Buy**     | RSI crosses above RSI MA | RSI > 55 (vs > 50) |
-| **Sell**    | RSI crosses below RSI MA | RSI < 45 (vs < 50) |
-
-Signals are plotted as triangle shapes and can be toggled on/off.
-
-<img width="911" height="866" alt="Signal Logic" src="https://github.com/user-attachments/assets/6f844595-59f7-43f9-b51b-0d8b48e84632" />
-
----
-
-## 📊 Visual Setup
+## Visual Setup
 
 - RSI line color shifts:  
   - Above 50 → Bullish (Green)  
@@ -51,17 +37,10 @@ Signals are plotted as triangle shapes and can be toggled on/off.
   - 70–100 → Overbought  
   - 30–0 → Oversold  
   - 50 → Trend filter
-
+    
 ---
 
-## 🔔 Alerts
-
-- **Buy Signal**: RSI crosses above MA and > 50  
-- **Sell Signal**: RSI crosses below MA and < 50
-
----
-
-## 🧠 Best Practices
+## Best Practices
 
 - Use longer RSI lengths on lower timeframes to reduce noise.
 - Match RSI and MA lengths for smoother overlays.
