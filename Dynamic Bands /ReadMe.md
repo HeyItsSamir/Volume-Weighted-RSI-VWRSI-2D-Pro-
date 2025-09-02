@@ -9,4 +9,6 @@ rsiDev = ta.stdev(rsi, bandLength)
 dynHigh = rsiMean + bandMult * rsiDev
 dynLow  = rsiMean - bandMult * rsiDev
 ```
-These bands are not static—they reflect volume-adjusted momentum extremes. When RSI enters these zones with strong volume, it signals potential reversal or exhaustion.
+These bands are not static—they reflect volume-adjusted momentum extremes. 
+
+When RSI enters these zones with strong volume, it signals potential reversal or exhaustion.
